@@ -23,6 +23,21 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         id="cookieyes"
         src="https://cdn-cookieyes.com/client_data/f00c689af5509d111fbd0698/script.js"
       />
+
+      <Script
+        id="gtag-base"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer', '
+              GTM-M832272');
+          `,
+        }}
+      />
       <Head />
       <ManagedUIContext>
         <Layout pageProps={pageProps}>
