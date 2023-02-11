@@ -22,7 +22,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Script
         id="cookieyes"
         src="https://cdn-cookieyes.com/client_data/f00c689af5509d111fbd0698/script.js"
-        strategy="lazyOnload"
       />
 
       <Script
