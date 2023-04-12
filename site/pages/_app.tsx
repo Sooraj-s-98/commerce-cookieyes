@@ -21,7 +21,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Script
         id="cookieyes"
-        src="https://scriptstaging.cookieyes.com/client_data/b04c97fc443f72c36f3f8f35/script.js"
+        src="https://scriptstaging.cookieyes.com/client_data/e7f8d2f273d5cffedf5b4f0d/script.j"
         strategy="beforeInteractive"
       />
 
